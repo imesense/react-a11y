@@ -1,0 +1,27 @@
+@import './vars';
+
+.a11y-schema-white {
+  --color-main: #{$color-black};
+  --color-back: #{$color-white};
+}
+
+.a11y-schema-black {
+  --color-main: #{$color-white};
+  --color-back: #{$color-black};
+}
+
+.a11y-schema-blue {
+  --color-main: #{$color-dark-blue};
+  --color-back: #{$color-light-blue};
+}
+
+.a11y-schema-beige {
+  --color-main: #{$color-brown};
+  --color-back: #{$color-beige};
+}
+
+.a11y-schema-brown {
+  --color-main: #{$color-green};
+  --color-back: #{$color-brown};
+}
+
