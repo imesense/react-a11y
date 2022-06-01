@@ -21,7 +21,7 @@ const getLineHeightClass = (height: A11yLineHeight) => `a11y-line-height_${heigh
 const getLetterSpacingClass = (spacing: A11yLetterSpacing) => `a11y-letter-spacing_${spacing}`;
 const getImageModeClass = (mode: A11yImageMode) => `a11y-image-mode_${mode}`;
 
-export const AllyStyleWrapper: FC<PropsWithChildren<{}>> = ({ children }) => {
+export const A11yStyleWrapper: FC<PropsWithChildren<{}>> = ({ children }) => {
   const { a11yState } = useContext(A11yControl);
 
   useEffect(() => {
