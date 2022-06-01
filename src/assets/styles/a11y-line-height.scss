@@ -1,0 +1,13 @@
+.a11y-line-height {
+  &_small {
+    line-height: var(--a11y-line-height_small, 1.125);
+  }
+
+  &_medium {
+    line-height: var(--a11y-line-height_medium, 1.375);
+  }
+
+  &_big {
+    line-height: var(--a11y-line-height_big, 1.75);
+  }
+}

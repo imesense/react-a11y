@@ -1,0 +1,5 @@
+@each $size in 14, 15, 16, 17, 18, 19, 20 {
+  .a11y-font-size-#{$size} {
+    font-size: #{$size}px;
+  }
+}

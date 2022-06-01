@@ -1,0 +1,13 @@
+.a11y-letter-spacing {
+  &_small {
+    letter-spacing: normal;
+  }
+
+  &_medium {
+    letter-spacing: var(--a11y-letter-spacing_medium, 2px);
+  }
+
+  &_big {
+    letter-spacing: var(--a11y-letter-spacing_big, 4px);
+  }
+}

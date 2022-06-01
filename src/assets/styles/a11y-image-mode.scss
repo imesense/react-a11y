@@ -1,0 +1,14 @@
+.a11y-image-mode {
+  &_disabled {
+    img:not([aria-hidden="true"]) {
+      border: 2px dashed var(--a11y-color-main) !important;
+      filter: contrast(0);
+    }
+  }
+
+  &_black_white {
+    img {
+      filter: grayscale(100%);
+    }
+  }
+}
