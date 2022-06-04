@@ -17,7 +17,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "build:styles": "node ./scripts/build-styles.js"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -50,7 +51,9 @@
     "@size-limit/preset-small-lib": "^7.0.8",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "cross-env": "^7.0.3",
     "husky": "^8.0.1",
+    "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "size-limit": "^7.0.8",
