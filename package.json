@@ -1,5 +1,6 @@
 {
-  "version": "1.0.0",
+  "name": "@imesense/react-a11y",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -12,7 +13,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build && yarn build:styles",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
@@ -21,7 +22,7 @@
     "build:styles": "node ./scripts/build-styles.js"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=17"
   },
   "husky": {
     "hooks": {
@@ -34,7 +35,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@imesense/react-a11y",
   "author": "Nikita Bukin",
   "module": "dist/react-a11y.esm.js",
   "size-limit": [
@@ -49,13 +49,11 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.5",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
     "cross-env": "^7.0.3",
     "husky": "^8.0.1",
     "node-sass": "^7.0.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
