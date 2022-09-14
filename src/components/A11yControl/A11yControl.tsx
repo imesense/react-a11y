@@ -1,4 +1,4 @@
-import React, { createContext, FC, useReducer, useState, useEffect, PropsWithChildren } from 'react';
+import React, { createContext, FC, useReducer, useState, useEffect } from 'react';
 import { reducer } from './a11yControlReducer';
 import { initialState } from './initialState';
 import { LocalStorageMiddleware } from './LocalStorageMiddleware';
@@ -12,7 +12,7 @@ export const A11yControl = createContext<{
   dispatch: () => {},
 });
 
-export const A11yControlProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
+export const A11yControlProvider: FC = ({ children }) => {
   const [a11yState, dispatch] = useReducer(reducer, initialState);
   const [isInited, setInit] = useState(false);
   const value = { a11yState, dispatch };
