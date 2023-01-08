@@ -35,7 +35,11 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "author": "Nikita Bukin",
+  "author": {
+    "name": "Nikita Bukin",
+    "email": "me@z3sa.ru",
+    "url": "https://github.com/Z3SA"
+  },
   "module": "dist/react-a11y.esm.js",
   "size-limit": [
     {
@@ -61,5 +65,6 @@
   },
   "dependencies": {
     "classnames": "^2.3.1"
-  }
+  },
+  "repository": "github:imesense/react-a11y"
 }
