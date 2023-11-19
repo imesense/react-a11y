@@ -8,7 +8,7 @@ const initialData: SavedA11yControlState['data'] = {
 };
 
 export const load = (): Partial<SavedA11yControlState['data']> =>
-  (JSON.parse(localStorage.getItem(STORE_KEY) ?? '') as SavedA11yControlState | null)?.data
+  (JSON.parse(localStorage.getItem(STORE_KEY) ?? 'null') as SavedA11yControlState | null)?.data
   ?? initialData;
 
 export const save = (data: A11yControlState) =>
